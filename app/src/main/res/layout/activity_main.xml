@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_main">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical"
+        tools:context="com.example.android.harrypotter.MainActivity"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hogwarts"
+                android:id="@+id/imageView" />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:text="@string/start_quiz"
+                android:layout_centerInParent="true"
+                android:id="@+id/start"
+                android:onClick="start"/>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_name"
+            android:textSize="25sp"
+            android:inputType="textCapWords"
+            android:id="@+id/name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/first_question"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hedwig"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/answer"
+            android:textSize="25sp"
+            android:inputType="textCapWords"
+            android:id="@+id/first_question" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:lines = "2"
+            android:text="@string/second_question"/>
+        <CheckBox
+            android:id="@+id/lavanda_checkbox"
+            android:drawableLeft="@drawable/lavanda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lavanda"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <CheckBox
+            android:id="@+id/parvati_checkbox"
+            android:drawableLeft="@drawable/parvati_patil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parvati"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <CheckBox
+            android:id="@+id/padma_checkbox"
+            android:drawableLeft="@drawable/padma_patil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/padma"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <CheckBox
+            android:id="@+id/pancy_checkbox"
+            android:drawableLeft="@drawable/pancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pancy"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <CheckBox
+            android:id="@+id/ginny_checkbox"
+            android:drawableLeft="@drawable/ginny_weasley"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ginny"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:lines = "2"
+            android:text="@string/third_question"/>
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sirius"
+            android:id="@+id/imageView2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/answer"
+            android:inputType="textCapWords"
+            android:id="@+id/third_question" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/fourth_question"/>
+        <RadioGroup
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:drawableLeft="@drawable/tiara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tiara"
+                android:paddingBottom="10dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/tiara"/>
+            <RadioButton
+                android:drawableLeft="@drawable/gryffindor_sword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sword"
+                android:paddingBottom="10dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/sword"/>
+            <RadioButton
+                android:drawableLeft="@drawable/nagini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nagini"
+                android:paddingBottom="10dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/nagini"/>
+            <RadioButton
+                android:drawableLeft="@drawable/diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diary"
+                android:paddingBottom="10dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/diary"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/fifth_question"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/expecto_patronum"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/answer"
+            android:inputType="textCapWords"
+            android:id="@+id/fifth_question" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/result"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="@string/submit"
+            android:layout_margin="25dp"
+            android:onClick="submit"/>
+    </LinearLayout>
+    </HorizontalScrollView>
+</ScrollView>

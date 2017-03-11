@@ -1,0 +1,34 @@
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">HarryPotter</string>
+    <string name="start_quiz">Start quiz</string>
+    <string name="your_name">Enter your name</string>
+    <string name="first_question">1. Was is the name of Harry\'s owl?</string>
+    <string name="second_question">2. Who of the students in not from Gryffindor?</string>
+    <string name="third_question">3. What is the name of Harry\'s godfather?</string>
+    <string name="fourth_question">4. 3. Which of these is <b>not</b> a Horcrux?</string>
+    <string name="fifth_question">5. Patronus charm </string>
+    <string name="lavanda">Lavanda Brown</string>
+    <string name="parvati">Parvati Patil</string>
+    <string name="padma">Padma Patil</string>
+    <string name="pancy">Pancy Parkinson</string>
+    <string name="ginny">Ginnie Weasley</string>
+    <string name="answer">Print you answer here</string>
+    <string name="tiara">Tiara</string>
+    <string name="nagini">Nagini</string>
+    <string name="sword">Godric\'s sword</string>
+    <string name="diary">Tom Riddle`s diary</string>
+    <string name="submit">Submit</string>
+    <string name="first_answer">hedwig</string>
+    <string name="third_answer">sirius black</string>
+    <string name="fifth_answer">expecto patronum</string>
+    <string name="lavanda_message">Lavanda is from Gryffindor!</string>
+    <string name="parvati_message">Parvati is from Gryffindor!</string>
+    <string name="padma_message">Padma is from Ravenclaw!</string>
+    <string name="pancy_message">Pancy is from Slytherin!</string>
+    <string name="ginny_message">Ginny is from Gryffindor!</string>
+    <string name="correct_message">Correct!</string>
+    <string name="incorrect_message">Try Again!</string>
+    <string name="message_one">YourScore is: <xliff:g id="Summary" example="5.0">%s</xliff:g>!\n You are a true "Harry Potter" fan! </string>
+    <string name="message_three">YourScore is: <xliff:g id="Summary" example="5.0">%s</xliff:g>!\n It seems that you are not particularly fond of "Harry Potter" books</string>
+    <string name="message_two">YourScore is: <xliff:g id="Summary" example="5.0">%s</xliff:g>!\n You know "Harry Potter" well" </string>
+</resources>
