@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">HarryPotter</string>
+    <string name="answer">Ваш ответ</string>
+    <string name="correct_message">Верно!</string>
+    <string name="diary">Дневника Тома Реддла</string>
+    <string name="fifth_answer">expecto patronum</string>
+    <string name="fifth_question">Заклинание Патронуса</string>
+    <string name="first_answer">букля</string>
+    <string name="first_question">1. Как зовут сову Гарри?</string>
+    <string name="fourth_question">4. Что из этого <b> не </b> не является Крестражем?</string>
+    <string name="ginny">Джинни Уизли</string>
+    <string name="ginny_message">Джинни из Гриффиндора!</string>
+    <string name="incorrect_message">Попробуйте еще раз!</string>
+    <string name="lavanda">Лаванда Браун</string>
+    <string name="lavanda_message">Лаванда из Гриффиндора!</string>
+    <string name="message_one">Ваш результат: <xliff:g id="Summary" example="5.0">%s</xliff:g>! Вы фанат Гарри Поттера!</string>
+    <string name="message_three">Ваш результат: <xliff:g id="Summary" example="5.0">%s</xliff:g>! Похоже, вам не очень нравятся книги о Гарри Поттере.</string>
+    <string name="message_two">Ваш результат: <xliff:g id="Summary" example="5.0">%s</xliff:g>!  Вы хорошо знаете вселенную \"Гарри Поттера\"</string>
+    <string name="nagini">Нагайна</string>
+    <string name="padma">Падма Патил</string>
+    <string name="padma_message">Падма из Когтеврана!</string>
+    <string name="pancy">Пэнси Паркинсон</string>
+    <string name="pancy_message">Пэнси из Слизерина!</string>
+    <string name="parvati">Парвати Патил</string>
+    <string name="parvati_message">Парвати из Гриффиндора!</string>
+    <string name="second_question">2. Кто из этих учеников не из Гриффиндора?</string>
+    <string name="start_quiz">Начать тест!</string>
+    <string name="submit">Получить результат</string>
+    <string name="sword">Меч Годрика Гриффиндора</string>
+    <string name="third_answer">сириус блэк</string>
+    <string name="third_question">Как зовут крестного Гарри</string>
+    <string name="tiara">Диадема</string>
+    <string name="your_name">Введите свое имя</string>
+</resources>
