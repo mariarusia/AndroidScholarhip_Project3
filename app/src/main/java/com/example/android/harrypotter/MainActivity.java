@@ -234,13 +234,13 @@ public class MainActivity extends AppCompatActivity {
         EditText nameTextfield = (EditText) findViewById(R.id.name);
         message = nameTextfield.getText().toString() + '\n';
         if (sum > 4.7){
-            message += getString(R.string.message_one, "" + sum);
+            message += getString(R.string.message_one, "" + String.format("%.3f", sum));
         }
         else if (sum > 2.7) {
-            message += getString(R.string.message_two, "" + sum);
+            message += getString(R.string.message_two, "" + String.format("%.3f", sum));
         }
         else {
-            message += getString(R.string.message_three, "" + sum);
+            message += getString(R.string.message_three, "" + String.format("%.3f", sum));
         }
         displayResult(message);
     }
