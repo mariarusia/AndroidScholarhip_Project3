@@ -5,7 +5,7 @@
     <string name="correct_message">Верно!</string>
     <string name="diary">Дневника Тома Реддла</string>
     <string name="fifth_answer">expecto patronum</string>
-    <string name="fifth_question">Заклинание Патронуса</string>
+    <string name="fifth_question">5. Заклинание Патронуса</string>
     <string name="first_answer">букля</string>
     <string name="first_question">1. Как зовут сову Гарри?</string>
     <string name="fourth_question">4. Что из этого <b> не </b> не является Крестражем?</string>
@@ -29,7 +29,7 @@
     <string name="submit">Получить результат</string>
     <string name="sword">Меч Годрика Гриффиндора</string>
     <string name="third_answer">сириус блэк</string>
-    <string name="third_question">Как зовут крестного Гарри</string>
+    <string name="third_question">3. Как зовут крестного Гарри</string>
     <string name="tiara">Диадема</string>
     <string name="your_name">Введите свое имя</string>
 </resources>

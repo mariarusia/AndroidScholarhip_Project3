@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-
-    android:id="@+id/activity_main">
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="5dp"
+            android:padding="@dimen/padding_small"
             tools:context="com.example.android.harrypotter.MainActivity">
 
             <RelativeLayout
@@ -22,36 +21,37 @@
                 android:layout_height="match_parent">
 
                 <ImageView
+                    android:id="@+id/imageView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/hogwarts"
-                    android:id="@+id/imageView" />
+                    android:src="@drawable/hogwarts" />
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="75dp"
-                    android:text="@string/start_quiz"
-                    android:layout_centerInParent="true"
                     android:id="@+id/start"
-                    android:onClick="start" />
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_centerInParent="true"
+                    android:onClick="start"
+                    android:text="@string/start_quiz" />
             </RelativeLayout>
 
             <EditText
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/your_name"
-                android:textSize="25sp"
+                tools:text="@string/your_name"
                 android:inputType="textCapWords"
-                android:id="@+id/name" />
+                android:textSize="@dimen/entry_field" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="15dp"
-                android:text="@string/first_question" />
+                android:layout_marginLeft="@dimen/padding_big"
+                android:layout_marginTop="@dimen/padding_big"
+                android:text="@string/first_question"
+                android:textSize="@dimen/entry_field" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -59,154 +59,153 @@
                 android:src="@drawable/hedwig" />
 
             <EditText
+                android:id="@+id/first_question"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/answer"
-                android:textSize="25sp"
                 android:inputType="textCapWords"
-                android:id="@+id/first_question" />
+                android:textSize="@dimen/entry_field" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="@dimen/padding_big"
+                android:layout_marginTop="@dimen/padding_big"
                 android:lines="2"
-                android:text="@string/second_question" />
+                android:text="@string/second_question"
+                android:textSize="@dimen/entry_field" />
 
             <CheckBox
                 android:id="@+id/lavanda_checkbox"
-                android:drawableLeft="@drawable/lavanda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/lavanda"
+                android:paddingBottom="@dimen/padding_middle"
+                android:paddingLeft="@dimen/padding_big"
                 android:text="@string/lavanda"
-                android:paddingLeft="15dp"
-                android:paddingBottom="10dp"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <CheckBox
                 android:id="@+id/parvati_checkbox"
-                android:drawableLeft="@drawable/parvati_patil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/parvati_patil"
+                android:paddingBottom="@dimen/padding_middle"
+                android:paddingLeft="@dimen/padding_big"
                 android:text="@string/parvati"
-                android:paddingLeft="15dp"
-                android:paddingBottom="10dp"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <CheckBox
                 android:id="@+id/padma_checkbox"
-                android:drawableLeft="@drawable/padma_patil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/padma_patil"
+                android:paddingBottom="@dimen/padding_middle"
+                android:paddingLeft="@dimen/padding_big"
                 android:text="@string/padma"
-                android:paddingLeft="15dp"
-                android:paddingBottom="10dp"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <CheckBox
                 android:id="@+id/pancy_checkbox"
-                android:drawableLeft="@drawable/pancy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pancy"
+                android:paddingBottom="@dimen/padding_middle"
+                android:paddingLeft="@dimen/padding_big"
                 android:text="@string/pancy"
-                android:paddingLeft="15dp"
-                android:paddingBottom="10dp"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <CheckBox
                 android:id="@+id/ginny_checkbox"
-                android:drawableLeft="@drawable/ginny_weasley"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ginny_weasley"
+                android:paddingBottom="@dimen/padding_middle"
+                android:paddingLeft="@dimen/padding_big"
                 android:text="@string/ginny"
-                android:paddingLeft="15dp"
-                android:paddingBottom="10dp"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="15dp"
+                android:paddingBottom="@dimen/padding_middle"
+                android:paddingLeft="@dimen/padding_big"
                 android:lines="2"
-                android:text="@string/third_question" />
+                android:text="@string/third_question"
+                android:textSize="@dimen/entry_field" />
 
             <ImageView
-
+                android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/sirius"
-                android:id="@+id/imageView2" />
+                android:src="@drawable/sirius" />
 
             <EditText
+                android:id="@+id/third_question"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/answer"
-                android:inputType="textCapWords"
-                android:id="@+id/third_question" />
+                android:inputType="textCapWords" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="15dp"
-                android:text="@string/fourth_question" />
+                android:paddingBottom="@dimen/padding_middle"
+                android:paddingLeft="@dimen/padding_big"
+                android:text="@string/fourth_question"
+                android:textSize="@dimen/entry_field" />
 
             <RadioGroup
-                android:textSize="25sp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_middle"
+                android:paddingLeft="@dimen/padding_big"
+                android:textSize="@dimen/entry_field">
 
                 <RadioButton
+                    android:id="@+id/tiara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/tiara"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_middle"
                     android:text="@string/tiara"
-                    android:paddingBottom="10dp"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:id="@+id/tiara" />
+                    android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
+                    android:id="@+id/sword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/gryffindor_sword"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_middle"
                     android:text="@string/sword"
-                    android:paddingBottom="10dp"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:id="@+id/sword" />
+                    android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
+                    android:id="@+id/nagini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/nagini"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_middle"
                     android:text="@string/nagini"
-                    android:paddingBottom="10dp"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:id="@+id/nagini" />
+                    android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
-                    android:drawableLeft="@drawable/diary"
+                    android:id="@+id/diary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/diary"
+                    android:paddingBottom="@dimen/padding_middle"
                     android:text="@string/diary"
-                    android:paddingBottom="10dp"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:id="@+id/diary" />
+                    android:textAppearance="?android:textAppearanceMedium" />
             </RadioGroup>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="15dp"
-                android:text="@string/fifth_question" />
+                android:paddingBottom="@dimen/padding_middle"
+                android:paddingLeft="@dimen/padding_big"
+                android:text="@string/fifth_question"
+                android:textSize="@dimen/entry_field" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -214,18 +213,18 @@
                 android:src="@drawable/expecto_patronum" />
 
             <EditText
+                android:id="@+id/fifth_question"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/answer"
-                android:inputType="textCapWords"
-                android:id="@+id/fifth_question" />
+                android:inputType="textCapWords" />
 
             <Button
-                android:layout_width="200dp"
-                android:layout_height="100dp"
-                android:text="@string/submit"
-                android:layout_margin="25dp"
-                android:onClick="submit" />
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/padding_big"
+                android:onClick="submit"
+                android:text="@string/submit" />
         </LinearLayout>
     </HorizontalScrollView>
 </ScrollView>
