@@ -10,7 +10,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method calculates the points for the first question
      */
-    public void check_the_first() {
+    public void checkTheFirst() {
         EditText answer_one = (EditText) findViewById(R.id.first_question);
         String answer = answer_one.getText().toString();
         Log.i("answer is", answer);
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method calculates the points for the second question
     */
-    public void check_the_second() {
+    public void checkTheSecond() {
         CheckBox lavanda_checkbox = (CheckBox) findViewById(R.id.lavanda_checkbox);
         boolean lavanda_checked = lavanda_checkbox.isChecked();
 
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method calculates the points for the third question
      */
-    public void check_the_third() {
+    public void checkTheThird() {
         EditText answer_one = (EditText) findViewById(R.id.third_question);
         String answer = answer_one.getText().toString();
         Log.i("answer is", answer);
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method calculates the points for the fourth question
      */
-    public void check_the_fourth()
+    public void checkTheFourth()
     {
         RadioButton tiara_button = (RadioButton) findViewById(R.id.tiara);
         boolean tiara_checked = tiara_button.isChecked();
@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method calculates the points for the fifth question
      */
-    public void check_the_fifth() {
+    public void checkTheFifth() {
         EditText answer_one = (EditText) findViewById(R.id.fifth_question);
         String answer = answer_one.getText().toString();
         Log.i("answer is", answer);
@@ -216,11 +216,11 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submit(View view) {
         sum = 0.0;
-        check_the_first();
-        check_the_second();
-        check_the_third();
-        check_the_fourth();
-        check_the_fifth();
+        checkTheFirst();
+        checkTheSecond();
+        checkTheThird();
+        checkTheFourth();
+        checkTheFifth();
 
         createMessage();
 
@@ -246,8 +246,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayResult(String message) {
-        TextView quantityTextView = (TextView) findViewById(R.id.result);
-        quantityTextView.setText(message);
+        Toast.makeText(MainActivity.this, message,
+                Toast.LENGTH_LONG).show();
     }
 
     /**
